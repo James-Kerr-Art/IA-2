@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket - Coding Conf</title>
+</head>
+<body>
+    <header>
+        <main class="container">
+            <section class="text">
+                <p><img src="../assets/logo-full.svg"></p><br/><br/>
+                <h1>CONGRATS, <span id="displayName" class="gradient-text">[[full name]]</span> Your Ticket is ready.</h1><br/><br/>
+                <p>We've emailed your ticket to <span id="displayEmail" class="email-color">[[email address]]</span> and will send updates in the run up to the event.</p><br/><br/>
+                <img src="../assets/pattern-ticket.svg" alt="Coding Conf ticket" style="width: 100%; max-width: 600px; height: auto;">
+                <img src="../assets/logo-full.svg" class="ticket-logo" alt="Coding Conf logo">
+                <div class="ticket-info">
+                    <h2 id="ticketName"></h2>
+                    <p id="ticketUser"></p>
+                </div>
+                <div class="ticket-no">
+                    <p id="ticketNumber" style="rotate: 90deg;" ></p>
+                </div>
+                <div class="At">
+                    <p>@</p>
+                </div>
+                <div class="date">
+                    <p id="date"></p>
+                </div>
+                <img src="../assets/icon-github.svg" class="ticket-logo" alt="Github logo" style="position: relative; bottom: 55px; left: 115px;  height: auto;">
+                 <div class="ticket-image">
+                    <img id="ticket-image" alt="file not found" style="position: relative; bottom: 390px; right: 240px; width: 70px; height: auto; border-radius: 12px;">
+                </div>
+            <script src="../js/ticket.js"></script>
+            </section>
+        </main>
+    </header>
+</body>
+</html>

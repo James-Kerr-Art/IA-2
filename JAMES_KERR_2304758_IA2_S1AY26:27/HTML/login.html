@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Coding Conf</title>
+</head>
+<body>
+    <header>
+        <main class="container">
+            <section class="login">
+                <p><img src="../assets/logo-full.svg"></p>
+                <h1>Your Journey to Coding Conf 2026 Starts Here!</h1>
+                <p>Secure your spot at next year's biggest coding conference.</p>
+
+                <form name="login" onsubmit="saveDetails(); return false;">
+                    <label for="file-input"> Upload Avatar </label>
+                      <!-- Triggers file picker on click, intercepts drops on drop -->
+                       <div id="drop-zone" onclick="clickConverter()" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" >
+                        <img src="../assets/icon-upload.svg" alt="" width="38" height="38" style="border: 1px solid hsl(0, 0%, 60%); background: hsl(0, 0%, 60%, 0.2); border-radius: 12px; padding: 8px;"><br/><br/>
+                        <p>Drag and drop or click to upload</p>
+                        <!-- file input is hidden -->
+                         <input type="file" id="file-input" multiple onchange="inputHandler(event)" style="display:none">
+                        </div>
+                <div class="info">
+                    <Label><img src="../assets/icon-info.svg" alt="info" width="10" height="10"></Label>
+                    <label style="font-size: 10px; position:relative; top: 2px;">Upload your photo (JPG or PNG, max size 500KB)</label><br/><br/>
+                </div>
+                    <label> Full Name </label>
+                    <input type="text" name="name_field" id="fullname" maxlength="24" minlength="6" required /><br/><br/>
+
+                    <label> Email Address </label>
+                    <input type="email" name="email_field" id="email" placeholder="example@email.com" required /><br/><br/>
+
+                    <label> GitHub Username </label>
+                    <input type="text" name="username_field" id="user" maxlength="32" minlength="3" placeholder="@yourusername" required /><br/><br/>
+
+                     <input type="submit" value="Generate my ticket"/> 
+                </form>
+                <script src="../js/validation.js"></script>
+            </section>
+        </main>
+    </header>
+</body>
+</html>

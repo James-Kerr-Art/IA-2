@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;800&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Inconsolata;
+    justify-content: center;
+    text-align: center;
+}
+
+input, 
+textarea, 
+select {
+    max-width: 100%;
+}
+
+.button {
+    width: 100%;
+    height: 38px;
+    font-size: 32px;
+    font-weight: 500;
+    background: hsl(7, 88%, 67%); /* Orange 500 */
+    border: 12px solid hsl(7, 88%, 67%); /* Orange 500 */
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.15s, opacity 0.15s;
+    text-decoration: none;
+    color: hsl(248, 70%, 10%); /* Neutral 900 */
+  }
+
+.ticket-logo {
+    transform: translate(120px, -265px);
+    display: flex;
+    max-width: 100%;
+    left: 0px;
+}
+
+html {
+height: 100%;
+}
+
+body {
+margin-right: 0px;
+min-height: 100%;
+
+background-color: hsl(248, 70%, 10%); /* Neutral 900 */
+background-repeat: no-repeat;
+
+/* Desktop/tablet/Mobile */
+
+background-image:
+url("../assets/pattern-lines.svg"),
+url("../assets/pattern-squiggly-line-top.svg"),
+url("../assets/pattern-squiggly-line-bottom-desktop.svg"),
+url("../assets/pattern-circle.svg"),
+url("../assets/pattern-circle.svg"),
+url("../assets/background-desktop.png");
+
+background-position: top, top right, bottom left, top left, 79% center, bottom right;
+background-size: auto, auto, auto, auto, auto, cover;
+}
+
+main {
+color: hsl(0, 0%, 100%); /*  Neutral 0 */
+}
+
+label {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* Neutral colors
+   Neutral 0:   hsl(0, 0%, 100%)
+   Neutral 300: hsl(252, 6%, 83%)
+   Neutral 500: hsl(245, 15%, 58%)
+   Neutral 700: hsl(245, 19%, 35%)
+   Neutral 900: hsl(248, 70%, 10%)
+
+   Orange colors
+   Orange 500:  hsl(7, 88%, 67%)
+   Orange 700:  hsl(7, 71%, 60%) */
+
+/* Gradient (text): add class="gradient-text" to a heading */
+
+.gradient-text {
+    background: linear-gradient(90deg, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    background-clip: text;
+    color: transparent;
+}
+
+.email-color {
+    color: hsl(7, 86%, 67%);
+}
+
+form {
+  width: 308px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 40px auto 0;
+  padding: 16px;
+  font-family: "Inconsolata", monospace;
+  border-radius: 6px;
+  text-align: left;
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="file"] {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 20px;
+    border: 1px solid hsl(0, 0%, 60%);
+    border-radius: 12px;
+    background: hsl(0, 0%, 60%, 0.1);
+    color: hsl(0, 0%, 100%)
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    height: 38px;
+    padding: 5px 12px;
+    transition: border-color 0.15s;
+
+    &:hover {
+      background-color: hsl(0, 0%, 60%, 0.5);
+    }
+  }
+
+   #drop-zone {
+    height: 90px;
+    margin-bottom: 0px;
+    padding: 12px;
+    text-align: center;
+    font-size: 12px;
+    background: hsl(0, 0%, 60%, 0.1);
+    border: 1.5px dashed hsl(0, 0%, 60%);
+    
+    border-radius: 12px;
+    cursor: pointer;
+    color: hsl(0, 0%, 40%);
+    transition: border-color 0.15s;
+
+    &:hover {
+      background-color: hsl(0, 0%, 60%, 0.5);
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .info{
+    display:flex; 
+    align-content:center; 
+    gap:4px;
+    color: hsl(0, 0%, 60%);
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 500;
+    background: hsl(7, 88%, 67%); /* Orange 500 */
+    border: 1px solid hsl(7, 88%, 67%); /* Orange 500 */
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.15s, opacity 0.15s;
+    color: hsl(248, 70%, 10%); /* Neutral 900 */
+
+    &:hover {
+      opacity: 0.75;
+      transform: translateY(-1px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}
+
+.At {
+  position: relative;
+  bottom: 249px;
+  right: 140px;
+}
+
+.ticket-info{
+  position: relative;
+  bottom: 140px;
+  right: 80px;
+}
+
+.date{
+  position: relative;
+  bottom: 460px;
+  right: 50px;
+  color: hsl(264, 11%, 50%)
+}
+
+.ticket-no {
+  position: relative;
+  font-size: 30px;
+  bottom: 300px;
+  left: 240px;
+  color: hsl(264, 11%, 50%)
+}
